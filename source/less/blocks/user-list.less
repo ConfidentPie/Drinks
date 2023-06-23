@@ -1,0 +1,51 @@
+.user-list {
+  display: flex;
+
+  @media (max-width: @mobile-width-only) {
+    width: 120px;
+  }
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-around;
+    width: 261px;
+  }
+}
+
+.user-list__link {
+  display: flex;
+  gap: 8px;
+  padding: 22px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+
+  @media (min-width: @tablet-width) {
+    padding: 32px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 32px 10px;
+  }
+
+  &:hover {
+    color: @base-primary;
+    fill: @base-primary;
+  }
+}
+
+.user-list__link-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    text-transform: uppercase;
+  }
+}

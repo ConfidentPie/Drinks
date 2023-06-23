@@ -1,0 +1,81 @@
+.countries {
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+.countries__title {
+  padding-bottom: 13px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 8px;
+  }
+}
+
+.countries__list {
+  padding-bottom: 30px;
+}
+
+.countries__form {
+  display: inline-block;
+}
+
+.countries__input {
+  position: absolute;
+}
+
+.countries__input[type="checkbox"]:checked + .countries__form-mark::before {
+  background-color: @base-primary;
+}
+
+.countries__input[type="checkbox"]:checked + .countries__form-mark::after {
+  left: -22px;
+  transition: left, 19ms;
+}
+
+.countries__input[type="checkbox"]:hover + .countries__form-mark::before {
+  background-color: @primary-opacity;
+  outline: solid 2px @primary-lighter;
+}
+
+.countries__input[type="checkbox"]:disabled + .countries__form-mark::before {
+  background-color: @light-grey;
+}
+
+.countries__input[type="checkbox"]:disabled + .countries__form-mark::after {
+  background-color: @lightest-grey;
+}
+
+.countries__input[type="checkbox"]:checked:disabled + .countries__form-mark::after {
+  background-color: @base-grey;
+}
+
+.countries__form-mark::before {
+  position: relative;
+  display: inline-block;
+  content: "";
+  width: 42px;
+  height: 24px;
+  left: 0;
+  top: 7px;
+  border-radius: 12px;
+  background-color: @base-grey;
+}
+
+.countries__form-mark::after {
+  position: relative;
+  display: inline-block;
+  content: "";
+  top: 5px;
+  left: -39px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: @base-white;
+}
+
+.countries__item {
+  padding-bottom: 15px;
+}

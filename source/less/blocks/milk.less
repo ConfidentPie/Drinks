@@ -1,0 +1,72 @@
+.milk {
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 29px;
+  }
+}
+
+.milk__title {
+  padding-bottom: 23px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.milk__form {
+  position: relative;
+}
+
+.milk__item {
+  padding-left: 38px;
+  padding-bottom: 23px;
+
+  &:last-child {
+    padding-bottom: 8px;
+  }
+}
+
+.milk__form-mark {
+  position: absolute;
+  top: -6px;
+  left: -37px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: @base-white;
+  border: solid 2px @base-grey;
+}
+
+.milk__input[type="radio"]:checked + .milk__form-mark::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 4px;
+  background-color: @base-primary;
+  border-radius: 50%;
+  content: "";
+}
+
+.milk__input[type="radio"]:checked + .milk__form-mark {
+  border-color: @base-primary;
+}
+
+.milk__input[type="radio"]:disabled + .milk__form-mark + .milk__form-label {
+  color: @base-grey;
+}
+
+.milk__input[type="radio"]:disabled + .milk__form-mark {
+  border-color: @light-grey;
+  background-color: @lightest-grey;
+}
+
+.milk__input[type="radio"]:disabled:checked + .milk__form-mark::before {
+  background-color: @light-grey;
+}
+
+.milk__input[type="radio"]:hover + span,
+.milk__input[type="radio"]:focus + span {
+  background-color: @primary-opacity;
+  border-color: @base-primary;
+}

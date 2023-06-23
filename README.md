@@ -1,7 +1,9 @@
-Grading project/2023
-Project Name: drink2go
-Student: Emelianenko Iaroslav
-Project development duration: 44 hours 48 minutes
+https://drink2go.netlify.app
+
+Grading project/2023<br>
+Project Name: drink2go<br>
+Student: Emelianenko Iaroslav<br>
+Project development duration: 44 hours 48 minutes<br>
 
 ## Краткая инструкция по работе
 
